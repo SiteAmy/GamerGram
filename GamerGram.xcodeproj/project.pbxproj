@@ -15,6 +15,7 @@
 		450A19492273044C004E5296 /* GamerGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A19482273044C004E5296 /* GamerGramTests.swift */; };
 		450A19542273044C004E5296 /* GamerGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A19532273044C004E5296 /* GamerGramUITests.swift */; };
 		450A196222730541004E5296 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A196122730541004E5296 /* SignInViewController.swift */; };
+		450A19642273063A004E5296 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A19632273063A004E5296 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		450A19532273044C004E5296 /* GamerGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamerGramUITests.swift; sourceTree = "<group>"; };
 		450A19552273044C004E5296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450A196122730541004E5296 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		450A19632273063A004E5296 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				450A19332273044A004E5296 /* AppDelegate.swift */,
 				450A19352273044A004E5296 /* ViewController.swift */,
-				450A19372273044A004E5296 /* Main.storyboard */,
 				450A196122730541004E5296 /* SignInViewController.swift */,
-				450A193A2273044C004E5296 /* Assets.xcassets */,
+				450A19632273063A004E5296 /* SignUpViewController.swift */,
+				450A19372273044A004E5296 /* Main.storyboard */,
 				450A193C2273044C004E5296 /* LaunchScreen.storyboard */,
 				450A193F2273044C004E5296 /* Info.plist */,
+				450A193A2273044C004E5296 /* Assets.xcassets */,
 			);
 			path = GamerGram;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				450A19362273044A004E5296 /* ViewController.swift in Sources */,
 				450A19342273044A004E5296 /* AppDelegate.swift in Sources */,
+				450A19642273063A004E5296 /* SignUpViewController.swift in Sources */,
 				450A196222730541004E5296 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
