@@ -6,9 +6,26 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Chats-->
+        <scene sceneID="Aku-Tx-oZL">
+            <objects>
+                <viewController id="c36-LO-ldU" customClass="ChatViewController" customModule="GamerGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0A3-PF-tBC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="EEB-6i-M8R"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chats" id="OHD-hP-St4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ht3-m4-qV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4209" y="490"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aJ4-gX-LMz">
             <objects>
@@ -23,12 +40,33 @@
                         <segue destination="2R5-0Q-AgH" kind="relationship" relationship="viewControllers" id="icS-CS-WnM"/>
                         <segue destination="YR1-Ms-lai" kind="relationship" relationship="viewControllers" id="u4l-1P-tBH"/>
                         <segue destination="yaf-p5-56i" kind="relationship" relationship="viewControllers" id="Gpj-EM-zJK"/>
-                        <segue destination="oK7-NX-aVF" kind="relationship" relationship="viewControllers" id="usS-E5-lKz"/>
+                        <segue destination="MpT-AL-ofo" kind="relationship" relationship="viewControllers" id="usS-E5-lKz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GR4-gJ-gwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2593" y="-1255"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q2r-w9-UzX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MpT-AL-ofo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="chat" selectedImage="chat" id="7yL-Ph-Xj5">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Erx-N4-zd3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c36-LO-ldU" kind="relationship" relationship="rootViewController" id="UBf-RX-ojc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="weM-nN-3kX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4209" y="-320"/>
         </scene>
         <!--NavigationHome-->
         <scene sceneID="iQq-BY-oDP">
@@ -38,7 +76,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KiK-Ju-wLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1981" y="-695"/>
+            <point key="canvasLocation" x="852" y="-739"/>
         </scene>
         <!--NavigationSearch-->
         <scene sceneID="tt7-EX-1aR">
@@ -48,7 +86,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUW-7H-M1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2288" y="-695"/>
+            <point key="canvasLocation" x="1670" y="-739"/>
         </scene>
         <!--NavigationProfile-->
         <scene sceneID="28V-Rc-HGb">
@@ -58,7 +96,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8N-8v-eSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="-695"/>
+            <point key="canvasLocation" x="2594" y="-320"/>
         </scene>
         <!--NavigationPost-->
         <scene sceneID="JrX-Dx-eVQ">
@@ -68,17 +106,10 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Os1-vY-StH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2864" y="-695"/>
-        </scene>
-        <!--NavigationChat-->
-        <scene sceneID="GNS-OX-9Qk">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="NavigationChat" id="oK7-NX-aVF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="G1S-KO-39P"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="34A-LZ-8bO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3142" y="-695"/>
+            <point key="canvasLocation" x="3430" y="-320"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chat" width="30" height="30"/>
+    </resources>
 </document>
