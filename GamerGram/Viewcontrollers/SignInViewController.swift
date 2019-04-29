@@ -15,6 +15,10 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.text = ""
+        passwordTextField.text = ""
+        
         emailTextField.backgroundColor = UIColor.clear
         emailTextField.tintColor = UIColor.white
         emailTextField.textColor = UIColor.white

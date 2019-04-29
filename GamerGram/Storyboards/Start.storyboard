@@ -39,12 +39,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FJN-PX-xh6">
                                 <rect key="frame" x="20" y="296" width="374" height="144"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-FI-MtK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-FI-MtK">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BlZ-Qt-Yr4"/>
                                         </constraints>
-                                        <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -156,7 +156,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="uGw-tC-ItB" kind="presentation" id="V6d-vw-4QD"/>
+                                            <action selector="signUpBtn_TU:" destination="Cxz-yc-vL2" eventType="touchUpInside" id="uFZ-sN-YQF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -206,7 +206,4 @@
     <resources>
         <image name="templateuser" width="402" height="500"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="JEE-lT-GJK"/>
-    </inferredMetricsTieBreakers>
 </document>

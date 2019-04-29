@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//import Firebase
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // change color of the tabbar itemd
         UITabBar.appearance().tintColor = .black
         
-        
-        
+        let parseConfig = ParseClientConfiguration{
+            $0.applicationId = "IQIp5RH3zXCnLJWW36iuaezgChvmmLkxX06iKfjB"
+            $0.clientKey = "nkDaN8dWOt1Q8wLHYXyJXwn3gJ5CqSNF9SpDx71t"
+            $0.server = "https://parseapi.back4app.com"
+        }
+       // FirebaseApp.configure()
         return true
     }
 
