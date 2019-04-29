@@ -16,6 +16,11 @@
 		450A19542273044C004E5296 /* GamerGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A19532273044C004E5296 /* GamerGramUITests.swift */; };
 		450A196222730541004E5296 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A196122730541004E5296 /* SignInViewController.swift */; };
 		450A19642273063A004E5296 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A19632273063A004E5296 /* SignUpViewController.swift */; };
+		454961CC22775A74004B9BE5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961CB22775A74004B9BE5 /* HomeViewController.swift */; };
+		454961CE22775AC3004B9BE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961CD22775AC3004B9BE5 /* SearchViewController.swift */; };
+		454961D022775ACE004B9BE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961CF22775ACE004B9BE5 /* ProfileViewController.swift */; };
+		454961D222775B4E004B9BE5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961D122775B4E004B9BE5 /* ChatViewController.swift */; };
+		454961D422775C00004B9BE5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961D322775C00004B9BE5 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		450A19552273044C004E5296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450A196122730541004E5296 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		450A19632273063A004E5296 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		454961CB22775A74004B9BE5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		454961CD22775AC3004B9BE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		454961CF22775ACE004B9BE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		454961D122775B4E004B9BE5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		454961D322775C00004B9BE5 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,11 @@
 				450A19352273044A004E5296 /* ViewController.swift */,
 				450A196122730541004E5296 /* SignInViewController.swift */,
 				450A19632273063A004E5296 /* SignUpViewController.swift */,
+				454961CB22775A74004B9BE5 /* HomeViewController.swift */,
+				454961D122775B4E004B9BE5 /* ChatViewController.swift */,
+				454961CD22775AC3004B9BE5 /* SearchViewController.swift */,
+				454961CF22775ACE004B9BE5 /* ProfileViewController.swift */,
+				454961D322775C00004B9BE5 /* PostViewController.swift */,
 				450A19372273044A004E5296 /* Main.storyboard */,
 				450A193C2273044C004E5296 /* LaunchScreen.storyboard */,
 				450A193F2273044C004E5296 /* Info.plist */,
@@ -262,8 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454961D422775C00004B9BE5 /* PostViewController.swift in Sources */,
+				454961CE22775AC3004B9BE5 /* SearchViewController.swift in Sources */,
+				454961CC22775A74004B9BE5 /* HomeViewController.swift in Sources */,
+				454961D222775B4E004B9BE5 /* ChatViewController.swift in Sources */,
 				450A19362273044A004E5296 /* ViewController.swift in Sources */,
 				450A19342273044A004E5296 /* AppDelegate.swift in Sources */,
+				454961D022775ACE004B9BE5 /* ProfileViewController.swift in Sources */,
 				450A19642273063A004E5296 /* SignUpViewController.swift in Sources */,
 				450A196222730541004E5296 /* SignInViewController.swift in Sources */,
 			);
