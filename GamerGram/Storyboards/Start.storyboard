@@ -39,7 +39,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FJN-PX-xh6">
                                 <rect key="frame" x="20" y="296" width="374" height="144"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-FI-MtK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bs-FI-MtK">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="BlZ-Qt-Yr4"/>
@@ -207,6 +207,6 @@
         <image name="templateuser" width="402" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V6d-vw-4QD"/>
+        <segue reference="JEE-lT-GJK"/>
     </inferredMetricsTieBreakers>
 </document>

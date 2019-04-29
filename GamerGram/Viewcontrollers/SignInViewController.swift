@@ -24,6 +24,7 @@ class SignInViewController: UIViewController {
         bottomLayerEmail.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
         bottomLayerEmail.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
         emailTextField.layer.addSublayer(bottomLayerEmail)
+        emailTextField.layer.masksToBounds = true
         
         passwordTextField.backgroundColor = UIColor.clear
         passwordTextField.tintColor = UIColor.white
@@ -34,6 +35,7 @@ class SignInViewController: UIViewController {
         bottomLayerPassword.frame = CGRect(x: 0, y: 29, width: 1000, height: 0.6)
         bottomLayerPassword.backgroundColor = UIColor(red: 50/255, green: 50/255, blue: 25/255, alpha: 1).cgColor
         passwordTextField.layer.addSublayer(bottomLayerPassword)
+        passwordTextField.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
 }
