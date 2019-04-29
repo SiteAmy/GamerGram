@@ -64,16 +64,40 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func signUpBtn_TU(_ sender: Any) {
-        
-        
-        
-        
-        
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextField.text
+        let sv = UIViewController.displaySpinner(onView: self.view)
+        user.signUpInBackground { (success, error) in
+            UIViewController.removeSpinner(spinner: sv)
+            if success{
+                self.loadHomeScreen()
+            }else{
+                if let descrip = error?.localizedDescription{
+                    self.displayErrorMessage(message: descrip)
+                }
+            }
         }
-        
-        
-        
-        
+
     }
+        
+    func loadHomeScreen(){
+       let storyBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+        let loggedInViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")as! LoggedInViewController
+        self.present(loggedInViewController, animated: true, completion: nil)
+ 
+    }
+    func displayErrorMessage(message:String){
+        let alertView = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default){(action:UIAlertAction) in }
+        alertView.addAction(OKAction)
+        if let presenter = alertView.popoverPresentationController{
+            presenter.sourceView = self.view
+            presenter.sourceRect = self.view.bounds
+        }
+        self.present(alertView, animated: true, completion: nil)
+    }
+        
+}
     
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignInViewController: UIViewController {
 
@@ -41,5 +42,48 @@ class SignInViewController: UIViewController {
         passwordTextField.layer.addSublayer(bottomLayerPassword)
         passwordTextField.layer.masksToBounds = true
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            loadHomeScreen()
+        }
+    }
+    
+    func loadHomeScreen(){
+        
+         let storyBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+         let loggedInViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")as! LoggedInViewController
+         self.present(loggedInViewController, animated: true, completion: nil)
+ 
+       /* let storyBoard: UIStoryboard = UIStoryboard(name:"Home", bundle: nil)
+        let homeViewController = storyBoard.instantiateViewController(withIdentifier: "HomeView")as! HomeViewController
+        self.present(homeViewController, animated: true, completion: nil)
+       */
+    }
+    @IBAction func signInbtn(_ sender: Any) {
+        let sv = UIViewController.displaySpinner(onView: self.view)
+        PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            UIViewController.removeSpinner(spinner: sv)
+            if user != nil {
+                self.loadHomeScreen()
+            }else{
+                if let descrip = error?.localizedDescription{
+                    self.displayErrorMessage(message: (descrip))
+                }
+            }
+        }
+    }
+    
+    func displayErrorMessage(message:String){
+        let alertView = UIAlertController(title: "Error!", message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default){(action:UIAlertAction) in }
+        alertView.addAction(OKAction)
+        if let presenter = alertView.popoverPresentationController{
+            presenter.sourceView = self.view
+            presenter.sourceRect = self.view.bounds
+        }
+        self.present(alertView, animated: true, completion: nil)
     }
 }

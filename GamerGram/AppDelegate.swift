@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             $0.clientKey = "nkDaN8dWOt1Q8wLHYXyJXwn3gJ5CqSNF9SpDx71t"
             $0.server = "https://parseapi.back4app.com"
         }
+        Parse.initialize(with: parseConfig)
        // FirebaseApp.configure()
         return true
     }
