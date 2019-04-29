@@ -21,6 +21,7 @@
 		454961D022775ACE004B9BE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961CF22775ACE004B9BE5 /* ProfileViewController.swift */; };
 		454961D222775B4E004B9BE5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961D122775B4E004B9BE5 /* ChatViewController.swift */; };
 		454961D422775C00004B9BE5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454961D322775C00004B9BE5 /* PostViewController.swift */; };
+		454961D622777892004B9BE5 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454961D522777892004B9BE5 /* Start.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		454961CF22775ACE004B9BE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		454961D122775B4E004B9BE5 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		454961D322775C00004B9BE5 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		454961D522777892004B9BE5 /* Start.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				454961CD22775AC3004B9BE5 /* SearchViewController.swift */,
 				454961CF22775ACE004B9BE5 /* ProfileViewController.swift */,
 				454961D322775C00004B9BE5 /* PostViewController.swift */,
+				454961D522777892004B9BE5 /* Start.storyboard */,
 				450A19372273044A004E5296 /* Main.storyboard */,
 				450A193C2273044C004E5296 /* LaunchScreen.storyboard */,
 				450A193F2273044C004E5296 /* Info.plist */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				450A193E2273044C004E5296 /* LaunchScreen.storyboard in Resources */,
+				454961D622777892004B9BE5 /* Start.storyboard in Resources */,
 				450A193B2273044C004E5296 /* Assets.xcassets in Resources */,
 				450A19392273044A004E5296 /* Main.storyboard in Resources */,
 			);
