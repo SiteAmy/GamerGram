@@ -124,21 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				450A19332273044A004E5296 /* AppDelegate.swift */,
-				450A19352273044A004E5296 /* ViewController.swift */,
-				450A196122730541004E5296 /* SignInViewController.swift */,
-				450A19632273063A004E5296 /* SignUpViewController.swift */,
-				454961CB22775A74004B9BE5 /* HomeViewController.swift */,
-				454961D122775B4E004B9BE5 /* ChatViewController.swift */,
-				454961CD22775AC3004B9BE5 /* SearchViewController.swift */,
-				454961CF22775ACE004B9BE5 /* ProfileViewController.swift */,
-				454961D322775C00004B9BE5 /* PostViewController.swift */,
-				454961D522777892004B9BE5 /* Start.storyboard */,
-				450A19372273044A004E5296 /* Main.storyboard */,
-				454961DF22777D5F004B9BE5 /* Profile.storyboard */,
-				454961DA22777B92004B9BE5 /* Home.storyboard */,
-				454961E422777DAB004B9BE5 /* Chat.storyboard */,
-				454961E122777D8C004B9BE5 /* Post.storyboard */,
-				454961DC22777D1F004B9BE5 /* Search.storyboard */,
+				454961E72277901D004B9BE5 /* Viewcontrollers */,
+				454961E622778FFF004B9BE5 /* Storyboards */,
 				450A193C2273044C004E5296 /* LaunchScreen.storyboard */,
 				450A193F2273044C004E5296 /* Info.plist */,
 				450A193A2273044C004E5296 /* Assets.xcassets */,
@@ -162,6 +149,35 @@
 				450A19552273044C004E5296 /* Info.plist */,
 			);
 			path = GamerGramUITests;
+			sourceTree = "<group>";
+		};
+		454961E622778FFF004B9BE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				454961D522777892004B9BE5 /* Start.storyboard */,
+				450A19372273044A004E5296 /* Main.storyboard */,
+				454961DF22777D5F004B9BE5 /* Profile.storyboard */,
+				454961DA22777B92004B9BE5 /* Home.storyboard */,
+				454961E422777DAB004B9BE5 /* Chat.storyboard */,
+				454961E122777D8C004B9BE5 /* Post.storyboard */,
+				454961DC22777D1F004B9BE5 /* Search.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		454961E72277901D004B9BE5 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				450A19352273044A004E5296 /* ViewController.swift */,
+				450A196122730541004E5296 /* SignInViewController.swift */,
+				450A19632273063A004E5296 /* SignUpViewController.swift */,
+				454961CB22775A74004B9BE5 /* HomeViewController.swift */,
+				454961D122775B4E004B9BE5 /* ChatViewController.swift */,
+				454961CD22775AC3004B9BE5 /* SearchViewController.swift */,
+				454961CF22775ACE004B9BE5 /* ProfileViewController.swift */,
+				454961D322775C00004B9BE5 /* PostViewController.swift */,
+			);
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8LU7B4PGV;
 				INFOPLIST_FILE = GamerGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8LU7B4PGV;
 				INFOPLIST_FILE = GamerGram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

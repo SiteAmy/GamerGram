@@ -87,6 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="6bs-FI-MtK" id="4Qa-c8-dII"/>
+                        <outlet property="passwordTextField" destination="B1u-9q-K5G" id="sfs-zq-Hfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,6 +183,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gJh-Iv-iLo"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Bcj-9D-Tvr" id="smW-aj-8cN"/>
+                        <outlet property="passwordTextField" destination="Pqf-gz-5bf" id="iab-72-AYf"/>
+                        <outlet property="profileImage" destination="JLE-KM-1ho" id="T3A-No-yv8"/>
+                        <outlet property="usernameTextField" destination="7f2-wb-Jo0" id="WwB-Bb-x87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hzh-fk-vKG" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,6 +207,6 @@
         <image name="templateuser" width="402" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JEE-lT-GJK"/>
+        <segue reference="V6d-vw-4QD"/>
     </inferredMetricsTieBreakers>
 </document>
