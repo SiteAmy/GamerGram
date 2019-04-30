@@ -67,6 +67,7 @@ class SignUpViewController: UIViewController {
         let user = PFUser()
         user.username = usernameTextField.text
         user.password = passwordTextField.text
+        user.email = emailTextField.text
         let sv = UIViewController.displaySpinner(onView: self.view)
         user.signUpInBackground { (success, error) in
             UIViewController.removeSpinner(spinner: sv)
