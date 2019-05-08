@@ -197,7 +197,7 @@
         <!--TabBarID-->
         <scene sceneID="NB5-jt-gEI">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarID" id="uGw-tC-ItB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="TabBarID" storyboardName="Main" referencedIdentifier="TabBarID" id="uGw-tC-ItB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHK-G5-cmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1579" y="617"/>
