@@ -2,8 +2,8 @@
 //  GamerGramTests.swift
 //  GamerGramTests
 //
-//  Created by Ruben Nijmeijer on 26/04/2019.
-//  Copyright © 2019 Ruben Nijmeijer. All rights reserved.
+//  Created by Amy Nijmeijer on 26/04/2019.
+//  Copyright © 2019 Amy Nijmeijer. All rights reserved.
 //
 
 import XCTest
